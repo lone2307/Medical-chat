@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+pydantic
+sqlalchemy
+python-dotenv
+passlib[bcrypt]
+chromadb
+google-generativeai
+langchain
+sentence-transformers
+fitz
