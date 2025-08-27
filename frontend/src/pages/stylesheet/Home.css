@@ -1,0 +1,103 @@
+
+.header {
+  height: 100vh;
+  background-image: linear-gradient(rgb(255, 185, 248), white);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  padding-top: 20%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.header h1 {
+  font-size: 48px;
+}
+
+.mainBody {
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  /* border-style:solid; */
+  /* border-color: rgb(0, 0, 0); */
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.introduction h1 {
+  font-size: 30px;
+  text-align:center;
+}
+
+.introduction p {
+  font-size: 20px;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-style:solid;
+  border-color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+/* Grid container */
+.three-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Each team member card */
+.cell {
+  background: #eef2ff;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;   /* stack heading on top of image */
+  justify-content: flex-start;
+  align-items: center;
+
+  min-height: 280px;        /* consistent box height */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.cell:hover {
+  transform: translateY(-5px);
+}
+
+.cell h3 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cell img {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .three-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .three-grid {
+    grid-template-columns: 1fr;
+  }
+}
