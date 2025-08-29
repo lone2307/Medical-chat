@@ -1,0 +1,12 @@
+.login-container {
+    align-self: center;
+}
+
+.login-box {
+    align-self: center;
+    text-align: center;
+}
+
+.login-box h2 {
+    font-size: large;
+}
