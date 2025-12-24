@@ -1,0 +1,1 @@
+A simple website with Python backend and Javascript frontend
